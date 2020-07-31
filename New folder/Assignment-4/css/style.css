@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.welcomeText{
+    font-family: 'Crete Round', serif;
+}
+body{
+    height: 100vh;
+    background-color: rgb(45,37,58); 
+    background-image: url(pics/minimalist/horizon.jpg);
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    font-family: 'Caveat', cursive;
+    color: aliceblue;
+}
+header{
+    background-color: rgb(0,37,68,0.8);
+    opacity: 1;
+    border: .5px #003057 solid;
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
+    border-radius: .5em;
+}
+header input{
+    background-color: white;
+    opacity: 1;
+}
+nav p {
+    color: white;
+
+}
+input, textarea{
+    padding: 0.5em;
+    border: #22223B solid;
+    border-radius: .5em;
+    box-sizing: border-box;
+    box-shadow: none;
+}
+/* input:focus{
+
+} */
+button{
+    padding: 0.5em;
+    border: .1em solid;
+    border-radius: .4em;
+    font-family: 'Acme', sans-serif;
+}
+button:hover{
+    color: rgb(125, 124, 122);
+    cursor: pointer;
+    background-color: rgb(30, 30, 52);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: lightgray; */
+    padding: 1.2em;
+}
+
+nav p {
+    font-size: x-large;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.signupform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: grey 1px solid;
+    border-radius: .5em;
+    width: fit-content;
+    align-self: center;
+    margin: 3em;
+    padding: 1em;
+    color: beige;
+    background-color: rgb(61,52,81,0.8);
+
+}
+.gender-input, .userType{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.text-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.signupform div{
+    padding: 0.2em;
+}
+.text-inputs input{
+    margin: 0.2em;
+}
+.gender-input div{
+    margin: 0.2em;
+}
+.alert-red{
+    color: red;
+    margin-top: .5em;
+}
+
+
+
+
+
+/* forum stylings */
+
+.newPostButtonDiv{
+    margin: .5em;
+}
+.topicOfPost label, .bodyOfPost label{
+    display: block;
+}
+.registerButtons{
+    display: flex;
+    align-items: center;
+}
+.postContainer, .editPostContainer{
+    width: 500px;
+    height: 500px;
+    border: 2px black solid ;
+    border-radius: .5em;
+    margin: auto;
+    position: fixed;
+    z-index: 10;
+    padding: .75em;
+    top:0;
+	bottom: 0;
+	left: 0;
+    right: 0;
+    background-color: rgb(30,30,52);
+    background-image: url(pics/minimalist/mountain.jpg);
+    background-position: center;
+    background-size: cover;   
+}
+.invisible{
+    visibility: hidden;
+}
+.visible{
+    visibility: visible;
+}
+.postDivContainer{
+    border: .1em solid rgb(219, 173, 215);
+    border-radius: .5em;
+    margin: .5em;
+    padding: .5em;
+    background-color: rgb(89,54,86,0.7);
+}
+.topicOfThePost{
+    font-family: 'Acme', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: .5em;
+}
+.bodyOfThePost{
+    font-family: 'Special Elite', cursive;
+}
+
+/*Comment page styling*/
+.commentBoxDiv{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* border: 2px black solid; */
+    padding: 1em;
+    margin: .5em;
+}
+#commentForm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+.commentArea{
+    width: 90%;
+}
+#commentBox{
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    background: rgba(255, 255, 255, 0.651);
+}
+/* .cmntDivContainer{
+
+} */
+.cmntDiv{
+    margin: .5em;
+    padding: .5em;
+    border: .1em skyblue solid;
+    background-color: rgba(2, 106, 204, 0.61);
+    width: fit-content;
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+    border-bottom-right-radius: .5em;
+    padding: .5em;
+}
+.commentButtonsDiv{
+    margin: .5em;
+}
+.commentButtonsDiv:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+#postTopic, #editpostTopic{
+    width: 100%;
+    box-sizing: border-box;
+    opacity: .5;
+    outline: none;
+}
+#postBody, #editpostBody{
+    width: 100%;  
+    box-sizing: border-box;
+    opacity: .5;
+    outline: none;
+}
+#post-submit, #editpost-submit{
+    background-color: rgba(78, 206, 78, 0.788);
+    margin: .3em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.cancelNewPost, .cancelEditPost{
+    background-color: rgba(255, 0, 0, 0.781);
+    margin: .3em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/* action button stlings */
+.postActionButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.postActionButtons div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.postActionButtons div i{
+    margin: 0.1em;
+    padding: 0.1em;
+}
+.postActionButtons div p{
+    margin: 0.1em;
+    padding: 0.1em;
+}
+.postHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* icons styling */
+.fa-thumbs-down{
+    color: red;
+}
+.fa-thumbs-down:hover, .fa-thumbs-up:hover, .fa-comment-dots:hover, .postEditButton:hover, .postDeleteButton:hover{
+    cursor: pointer;
+}
+.dislikeNo{
+    color: red;
+}
+.fa-thumbs-up{
+    color: rgb(0, 140, 255);
+}
+.likeNo{
+    color: rgb(0, 140, 255);
+}
+.fa-comment-dots{
+    color: rgb(131, 131, 131);
+}
+
+
+
+/* //post page stylings */
